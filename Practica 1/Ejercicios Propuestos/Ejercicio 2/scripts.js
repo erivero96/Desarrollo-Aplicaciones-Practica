@@ -46,8 +46,13 @@ form.addEventListener('submit', function(event) {
     // Validación para la fecha de nacimiento
     const fechaNacimiento = document.getElementById('fechaNacimiento');
     const fechaNacimientoError = document.getElementById('fechaNacimientoError');
+    const fechaActual = new Date().toISOString().split('T')[0];
+
     if (!fechaNacimiento.checkValidity()) {
         fechaNacimientoError.textContent = fechaNacimiento.validationMessage;
+        isValid = false;
+    } else if (fechaNacimiento.value > fechaActual) {
+        fechaNacimientoError.textContent = 'La fecha de nacimiento no puede ser en el futuro.';
         isValid = false;
     } else {
         fechaNacimientoError.textContent = '';
