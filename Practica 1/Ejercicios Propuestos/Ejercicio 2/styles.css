@@ -34,6 +34,21 @@ input[type="date"] {
     box-sizing: border-box;
 }
 
+/* Estilo para campos válidos */
+input:valid {
+    border-color: #4CAF50;
+}
+
+/* Estilo para campos inválidos */
+input:invalid {
+    border-color: #e74c3c;
+}
+
+/* Estilo para el placeholder */
+input::placeholder {
+    color: #bbb;
+}
+
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
