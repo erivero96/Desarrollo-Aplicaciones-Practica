@@ -1,0 +1,65 @@
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Juan Perez</h1>
+            <p>Desarrollador Web | Diseñador UI/UX</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section about">
+            <div class="container about-content">
+                <img src="https://www.vecteezy.com/png/10156651-people-icon-sign-symbol-design" alt="Foto de perfil de Juan Perez, desarrollador web y diseñador UI/UX" title="Juan Perez - Desarrollador Web" class="profile-img">
+                <div class="about-text">
+                    <h2>Sobre mí</h2>
+                    <p>Hola, soy Juan Perez, un desarrollador web con más de 5 años de experiencia en la creación de aplicaciones y sitios web interactivos y visualmente atractivos. Me especializo en tecnologías frontend, incluyendo HTML5, CSS3, y JavaScript, y tengo un fuerte enfoque en la usabilidad y la experiencia del usuario.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript & React</li>
+                    <li>Diseño Responsivo</li>         
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2>Proyectos Destacados</h2>
+                <article>
+                    <h3>Sistema de Gestión de Tareas</h3>
+                    <p>Desarrollo de un sistema de gestión de tareas con React y Node.js, optimizado para rendimiento y escalabilidad.</p>
+                </article>
+                <article>
+                    <h3>Aplicación de E-commerce</h3>
+                    <p>Creación de una aplicación de comercio electrónico responsiva, con un carrito de compras completamente funcional y una pasarela de pago segura.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <section id="contact">
+                <h2>Contacto</h2>
+                <p>Correo electrónico: <a href="mailto:juanperez@ejemplo.com">juanperez@ejemplo.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/juanperez" target="_blank">Juan Perez en LinkedIn</a></p>
+            </section>
+            <p>&copy; 2024 Juan Perez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
