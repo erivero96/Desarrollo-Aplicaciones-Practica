@@ -1,0 +1,67 @@
+/* Estilos Generales */
+/* Selectores por Nombre: */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Selectores por Clase: */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Estilos para la Página Principal */
+/* Selectores por Nombre: */
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Selectores por Clase: */
+p.welcome {
+    color: #ff6600;
+    font-style: italic;
+}
+
+/* Selectores por ID: */
+#contact-info {
+    color: #9900cc;
+    font-weight: bold;
+}
+
+/* Selectores por Clase: */
+.nav-links a {
+    color: #555;
+    font-weight: bold;
+}
+
+/* Estilos para la Página de Servicios */
+/* Selectores de Atributo: */
+a[href$=".com"] {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Pseudo-clases: */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-clases: */
+input:focus {
+    border: 2px solid #007bff;
+}
+
+/* Estilos para la Página de Contacto */
+/* Pseudo-elementos: */
+p::first-letter {
+    font-size: 36px;
+    color: #9900cc;
+}
+
+/* Selectores por Nombre y Selectores Múltiples: */
+h2, ul, li {
+    color: #333;
+    font-weight: bold;
+}
