@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Page 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Veterinaria CuidaBien</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Page 2</h1>
+        <h1>Contáctanos</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="page1.html">Page 1</a></li>
-            <li><a href="page2.html">Page 2</a></li>
-            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="page1.html">Servicios</a></li>
+            <li><a href="page2.html">Contáctanos</a></li>
         </ul>
     </nav>
 
     <main>
-        <section>
-            <h2>About Page 2</h2>
-            <p>This is the second page of the website.</p>
+        <section id="contact-form-section">
+            <h2>Agenda una Cita</h2>
+            <p>Por favor, completa el siguiente formulario para contactarte con nosotros y agendar una cita para tu mascota.</p>
+            
+            <form action="submit_form.php" method="post">
+                <label for="name">Nombre Completo:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Teléfono:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="appointment-date">Fecha de la Cita:</label><br>
+                <input type="date" id="appointment-date" name="appointment_date" required><br><br>
+
+                <label for="appointment-time">Hora de la Cita:</label><br>
+                <input type="time" id="appointment-time" name="appointment_time" required><br><br>
+
+                <label for="message">Mensaje o Comentarios:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2022 Your Website. All rights reserved.</p>
+        <p>&copy; 2024 Veterinaria CuidaBien. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
