@@ -1,0 +1,28 @@
+/* Medidas en porcentaje (%) */
+header {
+    width: 100%;
+    height: 20vh; /* 20% del alto de la ventana */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+/* Medidas relativas a la fuente del elemento padre (em) */
+.section1 {
+    width: 80%;
+    height: 20em;
+    background-color: #f4f4f4;
+    margin: 5% auto;
+    padding: 2em;
+}
+
+/* Medidas relativas a la fuente raíz del documento (rem) */
+.section2 {
+    width: 50rem;
+    height: 25rem;
+    background-color: #ddd;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 0.5rem solid #333;
+}
