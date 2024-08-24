@@ -231,3 +231,22 @@ footer {
     border: 5px solid #000000;
     border-radius: 100px;
 }
+
+/* Selectores Regex */
+/* Attribute Selectors: [class^="service-"] */
+[class^="service-"] {
+    color: #ff603f;
+    font-weight: bold;
+}
+
+/* Attribute Selectors: [class$="-card"] */
+[class$="-card"] {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+/* Attribute Selectors: [class*="profile"] */
+[class*="profile"] {
+    border: 2px solid #ff7f50;
+    padding: 5px;
+}
