@@ -1,0 +1,35 @@
+/* Estilo para el cuerpo */
+#cuerpo {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+#encabezado {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para los títulos dentro de las secciones */
+#titulo-seccion1, #titulo-seccion2 {
+    color: #333;
+    padding-left: 20px;
+}
+
+/* Estilo para los párrafos */
+#parrafo1, #parrafo2 {
+    padding: 10px 20px;
+    color: #666;
+}
+
+/* Estilo para el pie de página */
+#pie-pagina {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
