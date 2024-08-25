@@ -6,6 +6,7 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    font-size: 16px; /* Tamaño base del texto */
 }
 
 /* Selector por NOMBRE (etiqueta) */
@@ -59,11 +60,12 @@ nav ul li a {
     padding: 10px 20px;
     background-color: #89CFF0; /* Verde suave */
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover { /* Pseudo Clase */
     background-color: #76B0C6; /* Un tono más oscuro de verde */
+    color: #FFFFFF; /* Texto blanco para mayor contraste */
 }
 
 /* Hero Section */
