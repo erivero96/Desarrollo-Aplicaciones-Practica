@@ -1,0 +1,16 @@
+/* Configuración de colores usando nombres */
+
+/* Color rojo */
+.rojo {
+    color: red;
+}
+
+/* Color verde */
+.verde {
+    color: green;
+}
+
+/* Color azul */
+.azul {
+    color: blue;
+}

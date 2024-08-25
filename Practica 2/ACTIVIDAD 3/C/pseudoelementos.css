@@ -1,0 +1,50 @@
+/* Pseudo elemento ::before */
+.highlight::before {
+    content: "🌟 ";
+    color: gold;
+    font-size: 20px;
+}
+
+/* Pseudo elemento ::after */
+.highlight::after {
+    content: " 🌟";
+    color: gold;
+    font-size: 20px;
+}
+
+/* Pseudo elemento ::first-letter */
+.first-letter::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Pseudo elemento ::first-line */
+.intro::first-line {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+/* Pseudo elemento ::selection */
+::selection {
+    background-color: #ffeb3b;
+    color: black;
+}
+
+/* Pseudo elemento en span dentro de párrafo */
+.highlighted-text span::before {
+    content: "«";
+    color: #ff4500;
+}
+
+.highlighted-text span::after {
+    content: "»";
+    color: #ff4500;
+}
+
+/* Pseudo elemento en elementos de lista */
+ul li::marker {
+    content: "👉";
+    color: #ff6347;
+    font-size: 1.2em;
+}

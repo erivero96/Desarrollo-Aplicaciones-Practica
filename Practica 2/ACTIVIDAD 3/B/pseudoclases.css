@@ -1,0 +1,52 @@
+/* Pseudo clase :hover */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Pseudo clase :visited */
+a:visited {
+    color: purple;
+}
+
+/* Pseudo clase :active */
+a:active {
+    color: green;
+}
+
+/* Pseudo clase :first-child */
+ul li:first-child {
+    font-weight: bold;
+    color: blue;
+}
+
+/* Pseudo clase :last-child */
+ul li:last-child {
+    font-style: italic;
+}
+
+/* Pseudo clase :nth-child(2) */
+ol li:nth-child(2) {
+    background-color: #f0f0f0;
+}
+
+/* Pseudo clase :focus */
+input:focus {
+    border: 2px solid #007bff;
+}
+
+/* Pseudo clase :checked */
+input[type="checkbox"]:checked {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Pseudo clase :disabled */
+input:disabled {
+    background-color: #cccccc;
+}
+
+/* Pseudo clase :empty */
+p:empty {
+    display: none;
+}

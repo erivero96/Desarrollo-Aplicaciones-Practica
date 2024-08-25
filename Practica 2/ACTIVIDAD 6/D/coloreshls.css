@@ -1,0 +1,16 @@
+/* Configuración de colores usando HLS */
+
+/* Color rojo */
+.hls1 {
+    color: hsl(0, 100%, 50%);
+}
+
+/* Color verde oscuro */
+.hls2 {
+    color: hsl(120, 100%, 25%);
+}
+
+/* Color azul */
+.hls3 {
+    color: hsl(240, 100%, 50%);
+}

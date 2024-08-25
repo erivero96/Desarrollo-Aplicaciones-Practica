@@ -1,0 +1,16 @@
+/* Configuración de colores usando RGB */
+
+/* Color rojo con valores enteros */
+.rgb1 {
+    color: rgb(255, 0, 0); /* Rojo */
+}
+
+/* Color verde con valores enteros */
+.rgb2 {
+    color: rgb(0, 128, 0); /* Verde */
+}
+
+/* Color azul con valores porcentuales */
+.rgb3 {
+    color: rgb(0%, 0%, 100%); /* Azul */
+}

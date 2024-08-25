@@ -1,0 +1,16 @@
+/* Configuración de colores usando código hexadecimal */
+
+/* Color rojo */
+.hex1 {
+    color: #FF0000;
+}
+
+/* Color verde */
+.hex2 {
+    color: #00FF00;
+}
+
+/* Color azul */
+.hex3 {
+    color: #0000FF;
+}

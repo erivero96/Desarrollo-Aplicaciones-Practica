@@ -1,0 +1,26 @@
+/* atributos.css */
+
+/* Select elements with a specific attribute */
+[attribute] {
+    /* CSS rules for elements with the specified attribute */
+}
+
+/* Select elements with a specific attribute and value */
+[attribute="value"] {
+    /* CSS rules for elements with the specified attribute and value */
+}
+
+/* Select elements with a specific attribute and value starting with a certain string */
+[attribute^="value"] {
+    /* CSS rules for elements with the specified attribute and value starting with a certain string */
+}
+
+/* Select elements with a specific attribute and value ending with a certain string */
+[attribute$="value"] {
+    /* CSS rules for elements with the specified attribute and value ending with a certain string */
+}
+
+/* Select elements with a specific attribute and value containing a certain string */
+[attribute*="value"] {
+    /* CSS rules for elements with the specified attribute and value containing a certain string */
+}
