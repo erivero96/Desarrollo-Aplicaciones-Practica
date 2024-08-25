@@ -1,0 +1,89 @@
+/* Selectores Regex-like */
+
+/* 1. Aplica estilo a los atributos que terminan con "-item" */
+[class$="-item"] {
+    color: #4A90E2; /* Azul agradable para el texto */
+    font-weight: bold;
+    padding: 15px; /* Aumenta el padding para más espacio interno */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Fondo claro para resaltar el texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+    margin-bottom: 20px; /* Añade margen inferior para separar los elementos */
+}
+
+/* 2. Aplica estilo a los atributos que comienzan con "data-" */
+[data^="data-"] {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    font-size: 1.1em; /* Tamaño de fuente ligeramente aumentado */
+    margin-bottom: 20px; /* Añade margen inferior para separar los elementos */
+}
+
+/* 3. Aplica estilo a los atributos que contienen "button" en cualquier parte */
+[class*="button"] {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 15px; /* Aumenta el padding para un mejor aspecto del botón */
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block; /* Asegura que se vea como un botón */
+    transition: background-color 0.3s; /* Transición suave en hover */
+    margin-bottom: 15px; /* Añade margen inferior para separar los botones */
+}
+
+[class*="button"]:hover {
+    background-color: #ffdd57; /* Color más claro en hover */
+}
+
+/* 4. Aplica estilo a los elementos con un atributo que contiene "color" */
+[class*="color"] {
+    border: 2px solid #026f90;
+    padding: 15px; /* Aumenta el padding para más espacio interno */
+    border-radius: 10px;
+    background-color: #e6ffe6; /* Fondo suave relacionado con el borde */
+    color: #006600; /* Texto en verde oscuro para combinar con el borde */
+    margin-bottom: 20px; /* Añade margen inferior para separar los elementos */
+}
+
+/* 5. Aplica estilo a los atributos que comienzan con "prefix-" y terminan con "-suffix" */
+[class^="prefix-"][class$="-suffix"] {
+    background-color: #e6f7ff;
+    color: #003366;
+    padding: 20px; /* Aumenta el padding para más espacio interno */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+    font-weight: bold;
+    margin-bottom: 20px; /* Añade margen inferior para separar los elementos */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    gap: 10px; /* Añade espacio horizontal entre los elementos */
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+}
+
+nav ul li {
+    margin-bottom: 10px; /* Añade espacio vertical entre los elementos */
+}
+
+nav ul li a.nav-item-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a.nav-item-button:hover {
+    background-color: #ffdd57;
+    color: #4a90e2;
+}

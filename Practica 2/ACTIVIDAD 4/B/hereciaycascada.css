@@ -1,0 +1,96 @@
+/* Herencia */
+
+/* 1. Color de texto heredado */
+body {
+    color: #333; /* Todos los elementos hijos de body heredarán este color */
+    font-family: 'Arial', sans-serif; /* Fuente base para todo el documento */
+    background-color: #f9f9f9; /* Fondo suave para todo el cuerpo */
+    margin: 0;
+    padding: 20px;
+}
+
+/* 2. Fuente heredada */
+div {
+    font-family: inherit; /* Hereda la fuente del elemento padre */
+}
+
+/* 3. Tamaño de fuente heredado */
+section {
+    font-size: 18px; /* Todos los elementos hijos de section heredarán este tamaño de fuente */
+    margin-bottom: 20px; /* Añade margen inferior para separar las secciones */
+}
+
+/* 4. Línea de altura heredada */
+article {
+    line-height: 1.8; /* Todos los elementos hijos de article heredarán esta altura de línea */
+}
+
+/* 5. Espaciado de texto heredado */
+main {
+    letter-spacing: 0.5px; /* Todos los elementos hijos de main heredarán este espaciado de letras */
+}
+
+/* 6. Estilo de fuente heredado */
+footer {
+    font-style: italic; /* Todos los elementos hijos de footer heredarán este estilo */
+    background-color: #e6e6e6; /* Añade un fondo suave al pie de página */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 7. Color de fondo heredado */
+nav {
+    background-color: #fff; /* Fondo blanco para el menú de navegación */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para elevar el menú */
+}
+
+/* Cascada */
+
+/* 1. Especificidad mayor */
+p {
+    color: #555; /* Color de texto general */
+}
+
+div p {
+    color: #007BFF; /* Color más específico, aplicado sobre el general */
+}
+
+/* 2. Importancia de la regla */
+h1 {
+    color: red !important; /* La regla con !important prevalece sobre otras reglas */
+    font-size: 2.5em;
+}
+
+header h1 {
+    color: #007BFF; /* Aunque es más específica, no sobreescribe la anterior por el !important */
+}
+
+/* 3. Orden de las reglas */
+h2 {
+    color: #007BFF; /* Esta regla se aplica primero */
+}
+
+h2 {
+    color: #FF69B4; /* Esta regla sobrescribe a la anterior, porque está después en la cascada */
+    margin-bottom: 10px;
+}
+
+/* 4. Uso de clases para especificidad */
+.intro {
+    font-weight: normal;
+}
+
+article .intro {
+    font-weight: bold; /* Esta regla tiene mayor especificidad y sobrescribe la anterior */
+    color: #FF69B4;
+}
+
+/* 5. Estilo en línea sobreescribe el CSS externo */
+p.inline {
+    color: grey; /* Estilo en el archivo CSS */
+}
+
+/* En el HTML: <p class="inline" style="color: black;">Este texto será negro</p> */
+/* El estilo en línea (color: black) sobrescribirá el color gris definido en el archivo CSS */

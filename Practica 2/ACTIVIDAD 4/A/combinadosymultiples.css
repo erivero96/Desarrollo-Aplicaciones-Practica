@@ -1,0 +1,78 @@
+/* Casos Combinados */
+
+/* Cambia el color y subraya el texto cuando se pasa el cursor sobre un enlace en la navegación */
+header nav ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Aplica un estilo cursivo y un color gris a los párrafos con la clase "intro" dentro de las secciones del main */
+main section p.intro {
+    font-style: italic;
+    color: #555;
+}
+
+/* Centra el texto en el pie de página y reduce el tamaño de la fuente */
+footer p {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Cambia el color del texto y añade una línea inferior a los títulos h2 dentro de la sección con id "section1" */
+section#section1 h2 {
+    color: #0d517b;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Establece un fondo amarillo para los párrafos con la clase "highlight" que están directamente dentro de un div */
+div > p.highlight {
+    background-color: #ffeb3b;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Cambia el color a verde y añade negrita al primer enlace de la lista de navegación */
+nav ul li:first-child a {
+    color: green;
+    font-weight: bold;
+}
+
+/* Añade un margen y un borde inferior a todas las secciones excepto la última */
+section:not(:last-of-type) {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Casos Múltiples */
+
+/* Aplica un color y una fuente específica a todos los títulos h1 y h2 */
+h1, h2 {
+    color: #35424a;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Establece un margen para todos los párrafos y elementos de lista */
+p, li {
+    margin: 15px 0;
+}
+
+/* Aplica un tamaño de fuente y color específicos a todos los enlaces y botones */
+a, button {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Aplica un fondo claro y un padding a los elementos con las clases "intro" y "highlight" */
+.intro, .highlight {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+/* Establece un fondo y color de texto específicos para los elementos con id "header" y "footer" */
+#header, #footer {
+    background-color: #89abc1;
+    color: white;
+    padding: 10px;
+}
+
