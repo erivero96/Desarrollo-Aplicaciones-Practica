@@ -1,28 +1,50 @@
 /* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    background-image: url('seamless-paw-print-pattern-free-vector.jpg'); /* Fondo con patrón de huellas */
-    background-repeat: repeat;
-    background-size: 50px 50px;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    background-color: #F5F5DC; /* Beige claro */
+    color: #123456; /* Azul oscuro */
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* Header */
-header {
-    background-color: #ff9f80;
-    padding: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+/* Selector por NOMBRE (etiqueta) */
+h1 { 
+    color: black; 
+    font-size: larger; 
+} 
+
+/* Selector por CLASE */
+.parrafo { 
+    color: crimson; 
+    font-style: italic; 
 }
 
-/* Navigation */
-nav ul {
-    background-color: #ff7f50;
-    padding: 15px;
+/* Selector por ID */
+#division { 
+    color: blueviolet; 
+    font-weight: 200; 
+} 
+
+/* Header */
+header {
+    background-color: #F5F5DC; /* Fondo beige */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 32px;
+    color: #123456;
+}
+
+header nav ul {
+    background-color: #F5F5DC;
+    padding: 0;
     list-style-type: none;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
@@ -31,68 +53,59 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #123456; /* Azul oscuro */
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: none; /* Sin subrayado */
     padding: 10px 20px;
-    background-color: #ff603f;
+    background-color: #89CFF0; /* Verde suave */
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-/* Pseudo-Clases: a:hover */
-nav ul li a:hover {
-    background-color: #ff603f;
+nav ul li a:hover { /* Pseudo Clase */
+    background-color: #76B0C6; /* Un tono más oscuro de verde */
 }
 
-/* Estilos para la Página Principal */
-/* Tag Selectors: h1 */
-h1 {
-    color: #333;
-    font-size: 36px;
+/* Hero Section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: #123456; /* Azul oscuro */
+}
+
+.hero h1 {
+    font-size: 48px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px #ff9f80;
 }
 
-/* Class Selectors: .welcome */
-p.welcome {
-    color: #ff603f;
-    font-style: italic;
+.hero p.welcome {
     font-size: 24px;
-    margin-bottom: 30px;
+    font-style: italic;
+    color: #123456; /* Azul oscuro */
+    margin-bottom: 40px;
 }
 
-/* ID Selectors: #contact-info */
-#contact-info {
-    color: #242424;
-    font-weight: bold;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    margin-top: 20px;
+.hero button {
+    background-color: #89CFF0; /* Verde suave */
+    color: #123456;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover { /* Pseudo Clase */
+    background-color: #76B0C6; /* Un tono más oscuro de verde */
+    transform: scale(1.05);
 }
 
 /* Estilos para la Página de Servicios */
-/* Selectores de Atributo: [href] y [href="http://www.udemy.com"] */
-[href] {
-    color: #00cc66;
-}
-
-[href="http://www.udemy.com"] {
-    color: #ff4d4d;
-}
-
-/* Tag Selectors: #services h2 */
-#services h2 {
-    color: #ff7f50;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px #fff;
-}
-
 #services {
-    background-color: #fff;
+    background-color: #FFFFFF;
     padding: 30px;
     border-radius: 10px;
     margin: 20px auto;
@@ -100,29 +113,90 @@ p.welcome {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#services ul {
-    text-align: left;
-    list-style-type: disc;
-    margin: 0;
-    padding: 0;
-    margin-left: 30px;
+#services h2 {
+    color: #123456; /* Azul oscuro */
+    margin-bottom: 15px;
+    text-shadow: 1px 1px #F5F5DC; /* Sombra en beige */
 }
 
-/* Pseudo-Classes: nth-child(2) */
-#services ul li:nth-child(2) {
-    color: #ff4d4d; /* Color rojo para el segundo elemento de la lista */
+/* Selectores Combinados y Múltiples */
+/* Descendientes */
+li a { 
+    text-decoration: none; /* Sin subrayado */
+    color: red; 
 }
 
-#services li {
-    color: #333;
+/* Adyacencia */
+ul + p { 
+    color: red; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+/* Hijos directos */
+div#container > ul { 
+    border: 1px solid black; 
+}
+
+/* Hermanos */
+h2 ~ p { 
+    margin: 10px 0; 
+}
+
+/* Selectores Múltiples */
+div, p, span, ul {  
+    text-decoration: none; /* Sin subrayado */
+}
+
+.service-card {
+    background-color: #F5F5DC;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+/* Selectores de Pseudo Clases */
+.service-card:nth-child(odd) {
+    background-color: #E6E6FA; /* Un color diferente para tarjetas impares */
+}
+
+.service-card:nth-child(even) {
+    background-color: #FFFACD; /* Un color diferente para tarjetas pares */
+}
+
+.service-card > h3 {
+    color: #FF603F; /* Color de título en las tarjetas de servicio */
+    font-size: 24px;
+}
+
+.service-card p {
+    color: #123456; /* Azul oscuro */
+    font-size: 16px;
+}
+
+.service-card img + p {
+    margin-top: 10px;
+}
+
+/* Pseudo-Elementos */
+#services h2::first-letter {
+    font-size: 36px;
+    color: #FF603F; /* Naranja oscuro */
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
-/* Estilos para la Página de Contacto */
-/* Combinator Selectors: form */
+#services h2::after {
+    content: ' 🌟';
+    font-size: 24px;
+}
+
+/* Formulario */
 form {
-    background-color: #fff;
+    background-color: #FFFFFF;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -134,119 +208,237 @@ form label {
     display: block;
     font-weight: bold;
     margin-top: 10px;
-    color: #333;
+    color: #123456; /* Azul oscuro */
     font-size: 16px;
 }
 
-/* Tag Selectors: form input, form textarea */
 form input, form textarea {
     width: 100%;
     padding: 12px;
     margin-top: 5px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     border-radius: 5px;
 }
 
-/* Pseudo-Clases: input:focus */
-form input:focus, form textarea:focus {
-    border: 2px solid #007bff;
+form input[type="submit"] {
+    background-color: #89CFF0; /* Verde suave */
+    color: #123456;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Pseudo-Clases: input[type="submit"]:hover */
-form input[type="submit"]:hover {
-    background-color: #ff4d26;
+form input[type="submit"]:hover { /* Pseudo Clase */
+    background-color: #76B0C6; /* Un tono más oscuro de verde */
+    transform: scale(1.05);
 }
 
-/* ID Selectors: #division */
-#division {
-    color: #000000;
-    font-weight: 200;
-}
+/* Selectores de Atributo */
+[href] { 
+    color: green; 
+} 
 
-/* Pseudo-Elements: p::first-letter */
-p::first-letter {
-    font-size: 22px;
-    color: #ff0404;
-}
-
-/* Combinator Selectors: li a */
-li a {
-    text-decoration: none;
-    color: #ff4d4d;
-}
-
-/* Combinator Selectors: ul + p */
-ul + p {
-    color: #ff4d4d;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-/* Combinator Selectors: div#container > ul */
-div#container > ul {
-    border: 1px solid black;
-}
-
-/* Combinator Selectors: h2 ~ p */
-h2 ~ p {
-    margin: 10px 0;
-}
-
-/* Multiple Selectors: div, p, span, ul */
-div, p, span, ul {
-    text-decoration: underline;
-}
-
-/* Multiple Selectors: div, p, span, em */
-div, p, span, em {
-    text-decoration: underline;
+[href="http://www.udemy.com"] { 
+    color: red; 
 }
 
 /* Footer */
 footer {
-    background-color: #ffccbb;
-    padding: 10px;
-    text-align: center;
-    color: #333;
+    background-color: #F5F5DC;
+    padding: 20px;
+    color: #123456;
     font-size: 16px;
-    position: fixed;
+    text-align: left;
     width: 100%;
+    position: relative;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.service-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+footer .left-section,
+footer .right-section {
+    width: 50%; /* Cada sección ocupa la mitad del footer */
 }
 
-.service-card img {
-    width: 100%;
-    border-radius: 5px;
+footer .left-section ul,
+footer .right-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
 }
 
-/* Estilos para la sección de veterinarios */
-#veterinarians .vet-profile img {
-    border: 5px solid #000000;
-    border-radius: 100px;
+footer .right-section ul {
+    justify-content: flex-end;
 }
 
-/* Selectores Regex */
-/* Attribute Selectors: [class^="service-"] */
+footer ul li a {
+    color: #123456; /* Azul oscuro */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px;
+}
+
+footer ul li a:hover {
+    color: #89CFF0; /* Verde suave */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Selectores de Atributo con Regex */
 [class^="service-"] {
-    color: #ff603f;
+    color: #89CFF0; /* Verde suave */
     font-weight: bold;
 }
 
-/* Attribute Selectors: [class$="-card"] */
 [class$="-card"] {
-    background-color: #f9f9f9;
+    background-color: #F5F5DC;
     padding: 10px;
 }
 
-/* Attribute Selectors: [class*="profile"] */
 [class*="profile"] {
-    border: 2px solid #ff7f50;
+    border: 2px solid #123456; /* Azul oscuro */
     padding: 5px;
+}
+
+/* Estilos para el botón */
+.animated-button {
+    background-color: #89CFF0; /* Verde suave */
+    color: #123456; /* Azul oscuro */
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.animated-button:hover {
+    background-color: #76B0C6; /* Un tono más oscuro de verde */
+    transform: scale(1.1);
+}
+
+/* Combinaciones avanzadas: selector descendente */
+footer ul li a[href*="contact"] {
+    font-style: italic;
+}
+
+/* Ejemplo de herencia */
+nav ul {
+    color: inherit; /* Hereda el color del elemento padre */
+}
+
+/* Selectores avanzados */
+input[type="text"]:focus {
+    background-color: #E6E6FA; /* Fondo lila cuando se enfoca el input */
+}
+
+input[placeholder] {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Estilos para tabletas y teléfonos móviles */
+    body {
+        font-size: 14px;
+    }
+
+    header .logo {
+        font-size: 24px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p.welcome {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .service-card {
+        width: 100%;
+        margin: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer .left-section,
+    footer .right-section {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Estilos para teléfonos móviles */
+    header .logo {
+        font-size: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p.welcome {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .service-card {
+        width: 100%;
+        margin: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    footer .left-section,
+    footer .right-section {
+        width: 100%;
+        text-align: center;
+    }
 }
