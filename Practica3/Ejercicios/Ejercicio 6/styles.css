@@ -1,0 +1,87 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 1.5px; /* Espacio enatre los elementos */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columnas iguales */
+    grid-template-rows: 100px 100px 100px; /* Altura constante de 200px para cada fila */
+    max-width: 1200px; /* Limitar el ancho máximo */
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+/* Estilos de los items */
+.grid-item {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    font-size: 1.2em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Distribución de los items en la cuadrícula */
+.item1 {
+    grid-area: 1 / 1 / 2 / 3; /* Ocupa la primera y segunda columna de la primera fila */
+}
+.item2 {
+    grid-area: 1 / 3 / 2 / 5; /* Ocupa la tercera y cuarta columna de la primera fila */
+}
+.item3 { grid-area: 2 / 1 / 3 / 2; } /* Ocupa la primera columna de la segunda fila */
+.item4 { grid-area: 2 / 2 / 3 / 4; } /* Ocupa la primera y segunda columna de la primera fila */
+.item5 { grid-area: 3 / 1 / 3 / 2; } /* Ocupa la primera columna de la segunda fila */
+.item6 { grid-area: 3 / 2 / 3 / 4; } /* Ocupa la cuarta columna de la segunda y tercera fila */
+.item7 { grid-area: 2 / 4 / 4 / 4; } /* Ocupa la tercera columna de la segunda fila */
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+        grid-template-rows: 200px 200px 200px 200px; /* Altura constante de 200px para cada fila */
+    }
+
+    .item1 {
+        grid-area: 1 / 1 / 2 / 3; /* Ocupa la primera y segunda columna de la primera fila */
+    }
+    .item2 {
+        grid-area: 2 / 1 / 3 / 3; /* Ocupa la primera y segunda columna de la segunda fila */
+    }
+    .item3 {
+        grid-area: 3 / 1 / 4 / 3; /* Ocupa la primera y segunda columna de la tercera fila */
+    }
+    .item4 {
+        grid-area: 4 / 1 / 5 / 3; /* Ocupa la primera y segunda columna de la cuarta fila */
+    }
+    .item5 {
+        grid-area: 5 / 1 / 6 / 3; /* Ocupa la primera y segunda columna de la quinta fila */
+    }
+    .item6 {
+        grid-area: 6 / 1 / 7 / 3; /* Ocupa la primera y segunda columna de la sexta fila */
+    }
+    .item7 {
+        grid-area: 7 / 1 / 8 / 3; /* Ocupa la primera y segunda columna de la séptima fila */
+    }
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
